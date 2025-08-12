@@ -1,0 +1,109 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle, #0d0d0d, #1a1a1a);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Main container */
+.game-container {
+  background: linear-gradient(to bottom right, #222, #111);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.2), inset 0 0 10px #000;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  border: 2px solid #00ffcc;
+}
+
+/* Heading */
+h1 {
+  font-size: 36px;
+  color: #00ffcc;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #008866;
+}
+
+/* Message text */
+#message-el {
+  font-size: 20px;
+  color: #ffc107;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+/* Cards and Sum display */
+#cards-el,
+#sum-el {
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  box-shadow: inset 0 0 8px rgba(0, 255, 128, 0.2);
+}
+
+/* Add hover glowing effect */
+#cards-el:hover,
+#sum-el:hover {
+  background-color: rgba(0, 255, 128, 0.1);
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+#start-btn,
+#newcard-btn,#restart-btn {
+  background: linear-gradient(to right, #00ffcc, #00cc88);
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00cc88;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+#newcard-btn:hover {
+  background: linear-gradient(to right, #00cc88, #00ffcc);
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00cc88;
+  transform: scale(1.05);
+}
+#start-btn:hover {
+  background: linear-gradient(to right, #00cc88, #00ffcc);
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00cc88;
+  transform: scale(1.05);
+}
+#restart-btn:hover {
+  background: linear-gradient(to right, #00cc88, #00ffcc);
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00cc88;
+  transform: scale(1.05);
+}
+#player-el {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 15px 0;
+  transition: all 0.3s ease;
+  margin: auto;
+}
+
+#player-el:hover {
+  transform: scale(1.05);
+}
